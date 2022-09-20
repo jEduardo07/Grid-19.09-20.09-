@@ -1,0 +1,21 @@
+A propriedade grid-tanplate-columns configura as larguras das colunas do grid
+
+.grid grid-template-columns-1{
+    grid-template-columns: 100px 100px 100px 100px;
+    /*quatro colunas de 100px de largura São criadas*/ 
+}
+
+.grid-template-columns-2{
+    grid-template-columns: 1fr 2fr;
+    /*Duas colunas sâo criadas, sendo a segunda com o dobro do tamanho da primeira, fr é uma unidade fracional. O tamanho do conteudo é respeitado ou seja, se o connteudo na primeira coluna for mauior que o da segunda, primeira serea maior.*/
+}
+
+.grid-template-columns-3{
+    grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+    /*Três colunas sâo criadas, a primeira terá no minimo 200px de largura e no maximo 1fr(isso significa que apos 200 px ela se expande da mesma forma que as outras colunas). As outras duas colunas vâo ter 1fr*/
+}
+
+.grid-template-columns-4{
+    grid-template-columns: repeat(3, 1fr);
+    /*Crias 3 colunas com 1fr de tamanho, o repeat seria a mesma coisa 1 fr 1 fr 1fr*/
+}
